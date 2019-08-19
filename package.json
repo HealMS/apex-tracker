@@ -1,0 +1,26 @@
+{
+  "name": "apex-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "denislin",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "dotenv": "^8.1.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.2"
+  }
+}
