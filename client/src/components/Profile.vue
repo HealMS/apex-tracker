@@ -1,6 +1,19 @@
 <template>
   <div>
-      profile
+      <div v-if="loading" class="loading">
+          <h1>loading...</h1>
+      </div>
+      <div v-if="error" class="error">
+          <h1>{{error}}</h1>
+          <router-link to="/">Go back</router-link>
+      </div>
+      <div v-if="profileData" class="container">
+          <h1 class="gamertag">
+              <img :src="profileData.platformInfo.avatarUrl" alt="" class="platform-avatar">
+              {{profileData.platformInfo.platformUserId}}
+          </h1>
+
+      </div>
   </div>
 </template>
 
@@ -29,7 +42,7 @@ export default {
             this.loading = false;
         } catch(err) {
             this.loading = false;
-            this.error = err.response.data.data;
+            this.error = err.message;
         }
     },
 }
