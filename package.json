@@ -13,6 +13,8 @@
   "author": "denislin",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "concurrently": "^4.1.2",
     "dotenv": "^8.1.0",
     "errorhandler": "^1.5.1",

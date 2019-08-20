@@ -1,19 +1,17 @@
 <template>
   <div class="container">
     <apex-header/>
-    <apex-search/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import ApexHeader from '@/components/Header.vue'
-import ApexSearch from '@/components/Search.vue'
 
 export default {
   name: 'app',
   components: {
     ApexHeader,
-    ApexSearch,
   },
 };
 </script>
