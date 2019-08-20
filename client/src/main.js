@@ -17,3 +17,6 @@ new Vue({
   render: h => h(App),
   router,
 }).$mount('#app')
+
+// use icon in vue-toasted
+//https://code.luasoftware.com/tutorials/vuejs/vue-toasted-with-font-awesome-icon/
